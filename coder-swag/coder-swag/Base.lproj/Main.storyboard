@@ -23,25 +23,25 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kjt-57-uoq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kjt-57-uoq">
                                 <rect key="frame" x="0.0" y="69.333333333333314" width="375" height="620.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="tEV-xL-mi2" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="149" id="tEV-xL-mi2" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tEV-xL-mi2" id="L1a-hG-sDJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148.66666666666666"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tEV-xL-mi2" id="L1a-hG-sDJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="Y6X-fj-Ngu">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="Y6X-fj-Ngu">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="148.66666666666666"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="148.66999999999999" id="Pvr-Zr-ddj"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-dt-FS0">
-                                                    <rect key="frame" x="87.666666666666686" y="58.333333333333329" width="200" height="31.999999999999986"/>
+                                                    <rect key="frame" x="87.666666666666686" y="-16.000000000000007" width="200" height="32.000000000000007"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="32" id="Bq3-f8-z7g"/>
                                                         <constraint firstAttribute="width" constant="200" id="gYI-lE-ey0"/>
@@ -54,10 +54,10 @@
                                             <constraints>
                                                 <constraint firstItem="Y6X-fj-Ngu" firstAttribute="leading" secondItem="L1a-hG-sDJ" secondAttribute="leading" id="9OL-wJ-szI"/>
                                                 <constraint firstAttribute="trailing" secondItem="Y6X-fj-Ngu" secondAttribute="trailing" id="G7m-ug-ukx"/>
+                                                <constraint firstItem="Y6X-fj-Ngu" firstAttribute="top" secondItem="L1a-hG-sDJ" secondAttribute="top" constant="3" id="IZ8-Kh-qzK"/>
                                                 <constraint firstItem="Y6X-fj-Ngu" firstAttribute="leading" secondItem="L1a-hG-sDJ" secondAttribute="leading" id="Mqq-Lz-wuJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="Y6X-fj-Ngu" secondAttribute="trailing" id="OtL-vy-0Mq"/>
-                                                <constraint firstAttribute="bottom" secondItem="Y6X-fj-Ngu" secondAttribute="bottom" id="S9W-o7-HMy"/>
-                                                <constraint firstItem="Y6X-fj-Ngu" firstAttribute="top" secondItem="L1a-hG-sDJ" secondAttribute="top" id="f73-8Q-HrD"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y6X-fj-Ngu" secondAttribute="bottom" constant="3" id="geh-29-7qp"/>
                                                 <constraint firstItem="a4D-dt-FS0" firstAttribute="centerX" secondItem="L1a-hG-sDJ" secondAttribute="centerX" id="s2U-nM-bmG"/>
                                                 <constraint firstItem="a4D-dt-FS0" firstAttribute="centerY" secondItem="L1a-hG-sDJ" secondAttribute="centerY" id="yGf-c0-UAT"/>
                                             </constraints>
